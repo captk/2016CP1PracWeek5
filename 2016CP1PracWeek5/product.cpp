@@ -12,18 +12,20 @@
  */
 
 #include <cstdlib>
+#include <iostream>
 
 using namespace std;
 double getX();
 double getY();
-double multXY(double x, double y);
+void multXY(double x, double y);
 /*
  * 
  */
-int mainProduct(int argc, char** argv) {
-    getX();
-    getY();
-    multXY();
+int main(int argc, char** argv) {
+    double x, y;
+    x = getX();
+    y = getY();
+    multXY(x, y);
     return 0;
 }
 
@@ -33,4 +35,17 @@ double getX(){
     cin >> x;
     cout << endl;
     return x;
+}
+
+double getY(){
+    double x;
+    cout << "Enter value for y: ";
+    cin >> x;
+    cout << endl;
+    return x;
+}
+
+void multXY(double x, double y){
+    cout << x*y;
+    
 }

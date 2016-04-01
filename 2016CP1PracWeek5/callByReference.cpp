@@ -13,18 +13,18 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <cmath>
 
 using namespace std;
-void swap(int, int);
+void swap(int &x, int &y);
 /*
  * 
  */
-int main(int argc, char** argv) {
+int mainCallByReference(int argc, char** argv) {
     int a = 100;
     int b = 200;
     cout << a << endl;
     cout << b << endl;
-    swap(a, b);
     swap(a, b);
     cout << a << endl;
     cout << b << endl;
@@ -36,6 +36,6 @@ void swap(int &x, int &y){
     int temp;
     temp = x;
     x = y;
-    y = x;
+    y = temp;
     return;
 }
