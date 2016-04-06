@@ -21,7 +21,7 @@ void multXY(double x, double y);
 /*
  * 
  */
-int main(int argc, char** argv) {
+int mainproduct(int argc, char** argv) {
     double x, y;
     x = getX();
     y = getY();

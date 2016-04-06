@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/callByReference.o \
 	${OBJECTDIR}/callByValue.o \
+	${OBJECTDIR}/precision.o \
 	${OBJECTDIR}/product.o
 
 
@@ -73,6 +74,11 @@ ${OBJECTDIR}/callByValue.o: callByValue.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/callByValue.o callByValue.cpp
+
+${OBJECTDIR}/precision.o: precision.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/precision.o precision.cpp
 
 ${OBJECTDIR}/product.o: product.cpp 
 	${MKDIR} -p ${OBJECTDIR}
