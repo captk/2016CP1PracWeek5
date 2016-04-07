@@ -19,7 +19,7 @@ void get_input(int& i, int& j);
 // This is the declaration for the function that adds 10 to i and 20 to j 
 void process(int& i, int& j);
 
-int main() {
+int mainrefs() {
     int i, j;
     get_input(i, j);
     cout << "I am about to call function process() i = " << i << " j = " << j << endl;

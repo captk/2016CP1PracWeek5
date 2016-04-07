@@ -39,7 +39,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/callByValue.o \
 	${OBJECTDIR}/precision.o \
 	${OBJECTDIR}/product.o \
-	${OBJECTDIR}/refs.o
+	${OBJECTDIR}/refs.o \
+	${OBJECTDIR}/swap_values.o
 
 
 # C Compiler Flags
@@ -90,6 +91,11 @@ ${OBJECTDIR}/refs.o: refs.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/refs.o refs.cpp
+
+${OBJECTDIR}/swap_values.o: swap_values.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/swap_values.o swap_values.cpp
 
 # Subprojects
 .build-subprojects:
