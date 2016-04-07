@@ -38,7 +38,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/callByReference.o \
 	${OBJECTDIR}/callByValue.o \
 	${OBJECTDIR}/precision.o \
-	${OBJECTDIR}/product.o
+	${OBJECTDIR}/product.o \
+	${OBJECTDIR}/refs.o
 
 
 # C Compiler Flags
@@ -84,6 +85,11 @@ ${OBJECTDIR}/product.o: product.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/product.o product.cpp
+
+${OBJECTDIR}/refs.o: refs.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/refs.o refs.cpp
 
 # Subprojects
 .build-subprojects:
