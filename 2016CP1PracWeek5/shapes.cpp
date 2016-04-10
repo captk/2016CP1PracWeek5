@@ -60,6 +60,7 @@ void draw_shape(int choice) //A simplified version of draw shape
     }
 }
 
+//draw the triangle on top. uses clever for loops.
 void draw_triangle(int size, char c) { // complete version of draw triangle function
     for (int i = 1; i <= size; i++) {
         for (int j = 0; j < size - i; j++) {
