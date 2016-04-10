@@ -65,7 +65,7 @@ void draw_triangle(int size, char c) { // complete version of draw triangle func
         for (int j = 0; j < size - i; j++) {
             cout << " ";
         }
-        for (int k = 1; k <= i; k++) {
+        for (int k = 1; k <= 2*i - 1; k++) {
             cout << c;
         }
         cout << endl;
@@ -82,7 +82,7 @@ void draw_bottom(int size, char c) {
         for (int j = 0; j < size - i; j++) {
             cout << " ";
         }
-        for (int k = 1; k <= i; k++) {
+        for (int k = 1; k <= 2*i -1; k++) {
             cout << c;
         }
         cout << endl;
