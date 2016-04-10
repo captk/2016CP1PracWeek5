@@ -41,6 +41,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/precision.o \
 	${OBJECTDIR}/product.o \
 	${OBJECTDIR}/refs.o \
+	${OBJECTDIR}/shapes.o \
 	${OBJECTDIR}/swap_values.o
 
 
@@ -97,6 +98,11 @@ ${OBJECTDIR}/refs.o: refs.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/refs.o refs.cpp
+
+${OBJECTDIR}/shapes.o: shapes.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/shapes.o shapes.cpp
 
 ${OBJECTDIR}/swap_values.o: swap_values.cpp 
 	${MKDIR} -p ${OBJECTDIR}

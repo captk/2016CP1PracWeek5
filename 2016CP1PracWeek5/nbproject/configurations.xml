@@ -18,6 +18,7 @@
       <itemPath>precision.cpp</itemPath>
       <itemPath>product.cpp</itemPath>
       <itemPath>refs.cpp</itemPath>
+      <itemPath>shapes.cpp</itemPath>
       <itemPath>swap_values.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -54,6 +55,8 @@
       </item>
       <item path="refs.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="shapes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="swap_values.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -88,6 +91,8 @@
       <item path="product.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="refs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="shapes.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="swap_values.cpp" ex="false" tool="1" flavor2="0">
       </item>

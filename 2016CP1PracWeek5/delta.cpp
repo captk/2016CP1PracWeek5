@@ -20,7 +20,7 @@ void get_coeff(double&,double&,double&);
 /*
  * 
  */
-int main(int argc, char** argv) {
+int maindelta(int argc, char** argv) {
     double a, b, c;
     double del = delta(a, b, c);
     cout << "Delta = " << del;
